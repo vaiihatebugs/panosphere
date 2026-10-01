@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Panosphere brings assignments, campus events, schedules, and reminders into one calm, journal-inspired workspace for college students."
+    />
+    <meta name="theme-color" content="#f2ebde" />
+    <title>Panosphere — Your whole college life, in one calm place</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Panosphere home">
+          <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+            <circle cx="22" cy="22" r="17.5"></circle>
+            <path d="M12.5 23.4c4.1-8 14.8-9.5 20-3.2"></path>
+            <path d="M14.4 29c4.3 3.8 12.7 3.8 16.2-2.3"></path>
+            <circle cx="30.5" cy="14.2" r="2.2"></circle>
+          </svg>
+          <span>Panosphere</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+          <a href="#benefits">Why Panosphere</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <button class="button button-small open-entry-modal" type="button">Add an entry</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> Your campus life, on one calm page</p>
+          <h1 id="hero-title">College gets messy. <em>Your day doesn’t have to.</em></h1>
+          <p class="hero-description">
+            Panosphere gathers classes, assignments, events, meetings, and reminders into a journal-style
+            workspace—so you know what matters today and what’s coming next.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary open-entry-modal" type="button">
+              Add a new entry.
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+            </button>
+            <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-note">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9"></path></svg>
+            One view for class, campus, and everything between.
+          </p>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="A preview of the Panosphere daily journal">
+          <div class="tape tape-top" aria-hidden="true"></div>
+          <div class="journal-card">
+            <div class="journal-topline">
+              <div>
+                <p class="journal-kicker">my day</p>
+                <h2>Tuesday, October 6</h2>
+              </div>
+              <span class="weather-note" aria-label="A calm day">calm day ☼</span>
+            </div>
+
+            <div class="journal-grid">
+              <div class="day-plan">
+                <p class="hand-label">today’s rhythm</p>
+                <div class="timeline-item">
+                  <time datetime="09:30">9:30</time>
+                  <span class="timeline-dot sage"></span>
+                  <div><strong>Design lecture</strong><small>Arts 204 · class</small></div>
+                </div>
+                <div class="timeline-item">
+                  <time datetime="13:00">1:00</time>
+                  <span class="timeline-dot clay"></span>
+                  <div><strong>Essay draft due</strong><small>Submit on Canvas</small></div>
+                </div>
+                <div class="timeline-item">
+                  <time datetime="18:30">6:30</time>
+                  <span class="timeline-dot gold"></span>
+                  <div><strong>Film society</strong><small>Student center · social</small></div>
+                </div>
+              </div>
+
+              <aside class="priority-note">
+                <svg class="pin" viewBox="0 0 30 30" aria-hidden="true"><path d="M9 4h12l-2 9 4 4H7l4-4-2-9Z"></path><path d="M15 17v9"></path></svg>
+                <p class="hand-label">don’t forget</p>
+                <label><input type="checkbox" checked disabled /> Email advisor</label>
+                <label><input type="checkbox" disabled /> Bring sketchbook</label>
+                <label><input type="checkbox" disabled /> RSVP by 5pm</label>
+              </aside>
+            </div>
+
+            <div class="journal-footer">
+              <div class="tiny-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+              <p><strong>3 things</strong> on your plate today</p>
+              <button class="round-add open-entry-modal" type="button" aria-label="Add a new entry">+</button>
+            </div>
+          </div>
+          <p class="scribble-note" aria-hidden="true">everything, together</p>
+          <svg class="scribble-arrow" viewBox="0 0 100 70" aria-hidden="true"><path d="M91 8C70 15 51 24 37 43c-4 6-8 12-13 18"></path><path d="m23 48 1 14 13-5"></path></svg>
+          <div class="paper-sprig" aria-hidden="true">
+            <svg viewBox="0 0 100 120"><path d="M49 116C50 77 47 49 62 9"></path><path d="M55 59C34 49 24 36 22 19c17 5 29 17 33 40Z"></path><path d="M50 83C71 74 82 62 86 45c-18 3-30 16-36 38Z"></path></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="soft-band section" id="benefits" aria-labelledby="benefits-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Less juggling. More living.</p>
+          <h2 id="benefits-title">A clearer head starts with a clearer day.</h2>
+          <p>Panosphere helps you stay on top of college without turning organization into another assignment.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-number">01</span>
+            <div class="icon-blob sage-blob" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="9" y="11" width="30" height="28" rx="3"></rect><path d="M16 7v8M32 7v8M9 20h30M16 27h5M27 27h5M16 33h5"></path></svg>
+            </div>
+            <h3>See everything together</h3>
+            <p>Keep coursework, campus events, club meetings, and personal plans in one easy-to-scan view.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <span class="benefit-number">02</span>
+            <div class="icon-blob clay-blob" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M26 7 11 26h12l-2 15 16-22H25l1-12Z"></path></svg>
+            </div>
+            <h3>Capture plans in seconds</h3>
+            <p>Add details yourself or drop in a screenshot, flyer, or schedule so nothing useful gets buried.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <span class="benefit-number">03</span>
+            <div class="icon-blob gold-blob" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 40c8.8 0 16-7.2 16-16S32.8 8 24 8 8 15.2 8 24s7.2 16 16 16Z"></path><path d="M17 25.5 22 30l9-11"></path></svg>
+            </div>
+            <h3>Show up ready</h3>
+            <p>Bring deadlines and upcoming plans back into view before they become last-minute surprises.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section how-section" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading left reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">From scattered to sorted—in three gentle steps.</h2>
+        </div>
+
+        <ol class="steps-list">
+          <li class="step reveal">
+            <div class="step-visual capture-visual" aria-hidden="true">
+              <div class="mini-mail"><span></span><i></i><i></i><i></i></div>
+              <div class="mini-flyer"><b>FRI 09</b><strong>campus night</strong><small>7 pm · the quad</small></div>
+              <svg viewBox="0 0 90 60"><path d="M7 11c30 2 50 12 66 34"></path><path d="m62 43 12 3-3-12"></path></svg>
+            </div>
+            <div class="step-copy">
+              <span>Step one</span>
+              <h3>Bring in the scattered stuff</h3>
+              <p>Add plans manually or bring in the emails, schedules, screenshots, and flyers that usually live in different places.</p>
+            </div>
+          </li>
+
+          <li class="step reverse reveal">
+            <div class="step-visual sort-visual" aria-hidden="true">
+              <div class="sort-chip class-chip">Class</div>
+              <div class="sort-chip due-chip">Due</div>
+              <div class="sort-chip social-chip">Social</div>
+              <div class="sort-center"><svg viewBox="0 0 48 48"><path d="M24 5v38M5 24h38"></path><circle cx="24" cy="24" r="12"></circle></svg></div>
+            </div>
+            <div class="step-copy">
+              <span>Step two</span>
+              <h3>Let the noise find its place</h3>
+              <p>Panosphere is designed to identify what matters, sort it by type and date, and make the next action easy to spot.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step-visual focus-visual" aria-hidden="true">
+              <div class="focus-page">
+                <small>today</small><strong>3 things</strong>
+                <span></span><span></span><span></span>
+              </div>
+              <div class="orbit one"></div><div class="orbit two"></div>
+            </div>
+            <div class="step-copy">
+              <span>Step three</span>
+              <h3>Open one calm daily view</h3>
+              <p>See today’s priorities, tomorrow’s plans, and what can wait—so you can focus, finish, and still make the fun stuff.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-paper reveal">
+          <div class="tape tape-about" aria-hidden="true"></div>
+          <div class="about-copy">
+            <p class="eyebrow">Why Panosphere</p>
+            <h2 id="about-title">Made for the part of college nobody organizes for you.</h2>
+            <p>
+              College life doesn’t arrive in one neat format. It shows up in inboxes, course portals,
+              group chats, paper flyers, and last-minute announcements. Panosphere is an idea for a calmer
+              layer across all of it: a space that feels closer to a well-loved journal than a corporate calendar.
+            </p>
+            <p class="about-signoff">Less catching up. More being there.</p>
+          </div>
+          <div class="about-quote" aria-hidden="true">
+            <span>make room for</span>
+            <strong>what matters</strong>
+            <svg viewBox="0 0 180 32"><path d="M4 22c40-13 98-12 171-2"></path></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A few good questions</p>
+          <h2 id="faq-title">Before you clear your head.</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <article class="faq-item">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-button-1">
+                What can I organize in Panosphere?
+                <span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-button-1" hidden>
+              <p>It is designed for class times, assignment deadlines, exams, meetings, campus events, social plans, reminders, and personal notes—all in the same daily view.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-button-2">
+                Can I add an event from a screenshot or flyer?
+                <span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-button-2" hidden>
+              <p>That is part of the planned experience: drop in an image, review the date and details it finds, then choose what to add. The demo on this page lets you preview an image without claiming a live calendar connection.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-button-3">
+                Does Panosphere connect with Gmail, Google Calendar, or Canvas?
+                <span aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-button-3" hidden>
+              <p>Those integrations are central to the product direction, but they are not connected in this website demo yet. The goal is to let you review what is imported before anything changes your schedule.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="cta-title">
+        <div class="cta-paper reveal">
+          <svg class="cta-star star-one" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2c1 12 6 17 18 18-12 1-17 6-18 18-1-12-6-17-18-18 12-1 17-6 18-18Z"></path></svg>
+          <svg class="cta-star star-two" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2c1 12 6 17 18 18-12 1-17 6-18 18-1-12-6-17-18-18 12-1 17-6 18-18Z"></path></svg>
+          <p class="eyebrow">One less thing to keep in your head</p>
+          <h2 id="cta-title">Put it down. Panosphere will help you pick it back up.</h2>
+          <p>Start with the assignment, event, or reminder you’re trying not to forget.</p>
+          <button class="button button-primary open-entry-modal" type="button">Add a new entry.</button>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Say hello</p>
+          <h2 id="contact-title">Have a thought for Panosphere?</h2>
+          <p>This idea is being shaped around real student life. Questions, integration requests, and honest feedback are welcome.</p>
+        </div>
+        <div class="contact-card reveal">
+          <p>Contact email</p>
+          <strong>[ADD CONTACT EMAIL]</strong>
+          <small>Add an email address here before publishing.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="#top" aria-label="Panosphere home">
+          <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+            <circle cx="22" cy="22" r="17.5"></circle>
+            <path d="M12.5 23.4c4.1-8 14.8-9.5 20-3.2"></path>
+            <path d="M14.4 29c4.3 3.8 12.7 3.8 16.2-2.3"></path>
+            <circle cx="30.5" cy="14.2" r="2.2"></circle>
+          </svg>
+          <span>Panosphere</span>
+        </a>
+        <p>For full days and clearer heads.</p>
+        <nav aria-label="Footer navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="copyright">© <span id="current-year"></span> Panosphere</p>
+      </div>
+    </footer>
+
+    <dialog class="entry-dialog" id="entry-dialog" aria-labelledby="entry-dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="Close add entry window">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16"></path></svg>
+        </button>
+        <p class="eyebrow">A fresh page</p>
+        <h2 id="entry-dialog-title">Add something to your day</h2>
+        <p class="dialog-intro">Choose the easiest way to get it out of your head.</p>
+
+        <div class="entry-tabs" role="tablist" aria-label="Entry method">
+          <button type="button" role="tab" aria-selected="true" aria-controls="manual-panel" id="manual-tab">Add manually</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="image-panel" id="image-tab" tabindex="-1">Drop an image</button>
+        </div>
+
+        <div class="tab-panel" id="manual-panel" role="tabpanel" aria-labelledby="manual-tab">
+          <form id="entry-form">
+            <div class="field full-field">
+              <label for="entry-title">What is it?</label>
+              <input id="entry-title" name="title" type="text" placeholder="e.g. Sociology paper due" required autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="entry-type">Type</label>
+              <select id="entry-type" name="type">
+                <option>Assignment</option>
+                <option>Class</option>
+                <option>Event</option>
+                <option>Meeting</option>
+                <option>Personal</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="entry-date">Date</label>
+              <input id="entry-date" name="date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="entry-time">Time <span>(optional)</span></label>
+              <input id="entry-time" name="time" type="time" />
+            </div>
+            <div class="field">
+              <label for="entry-note">Note <span>(optional)</span></label>
+              <input id="entry-note" name="note" type="text" placeholder="Room, link, or reminder" />
+            </div>
+            <button class="button button-primary full-field" type="submit">Save this entry</button>
+            <p class="form-footnote full-field">Demo entries are saved only in this browser.</p>
+          </form>
+        </div>
+
+        <div class="tab-panel" id="image-panel" role="tabpanel" aria-labelledby="image-tab" hidden>
+          <input class="sr-only" id="image-upload" type="file" accept="image/png,image/jpeg,image/webp" />
+          <label class="drop-zone" for="image-upload" tabindex="0">
+            <span class="upload-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><path d="M20 27V8M13 15l7-7 7 7"></path><path d="M8 25v7h24v-7"></path></svg>
+            </span>
+            <strong>Drop a screenshot or flyer here</strong>
+            <span>or choose an image · PNG, JPG, or WebP</span>
+          </label>
+          <div class="image-preview" id="image-preview" hidden>
+            <img src="" alt="Selected entry image preview" />
+            <div><strong id="image-name"></strong><span>Ready to preview</span></div>
+            <button class="remove-image" type="button">Remove</button>
+          </div>
+          <button class="button button-primary image-action" type="button" disabled>Preview image</button>
+          <p class="form-footnote">This demo previews your image. Reading dates and calendar sync require the future app connection.</p>
+        </div>
+
+        <div class="dialog-status" id="dialog-status" role="status" aria-live="polite" hidden></div>
+      </div>
+    </dialog>
+  </body>
+</html>
